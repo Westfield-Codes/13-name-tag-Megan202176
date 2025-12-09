@@ -5,53 +5,80 @@
     <title>Nametag Creator</title>
     <style>
     #name{
-        width:800px;
+      margin-left:50px;
+        width:690px;
         height:500px;
         border-style:solid;
+        border-color:gray;
         border-width:2px;
         border-radius:20px;
+         box-shadow: 10px 10px 10px rgb(94, 94, 94);
     }
     #hello{
-      border-radius:18px;
+      border-top-left-radius:18px;
+      border-top-right-radius:18px;
       text-align:center;
       font-size:150px;
       font-family:fantasy;
       margin-top:0px;
       color:white;
-      background-color: magenta;
+      background-color:#ff49da;
     }
     #my{
-      margin-left:270px;
+      text-align:center;
+      margin-left:200px;
       margin-top:-90px;
       position:absolute;
-      font-family:fantasy;
+      font-family:"Arial";
       font-size:50px;
-      color:magenta
+      color:#ff49da;
     }
     #line{
-      color:magenta;
-      width:800px;
-      height:20px;
+      background-color:#ff49da;
+      height:8px;
+      width:690px;
+      margin-top:20px;
     }
+
+    #in{
+      height:120px;
+      width:500px;
+      margin-left:95px;
+      font-size:90px;
+      font-family:"Bradley Hand", cursive;
+      text-align:center;
+      border:none;
+      outline: none; 
+    }
+
+    button{
+      height:50px;
+      width:150px;
+      
+      font-size:20px;
+      margin-left:320px;
+      margin-top:20px;
+    }
+    button:hover{
+      background-color:rgb(113, 175, 113);
+    }
+    button:active{
+      transform: translateY(3px);
+    }
+    
     </style>
   </head>
   <body>
      <h1>Instructions</h1>
   <p>Make a page that looks as much as possible like the nametag.jpg image below without using that image. See README.md for tasks. </p>
     <div id="name">
-      <h1 id="hello">Hello</h1>
-      <p id="my">My name is</p>
-      <div id="line"> </div>
+      <h1 id="hello">H E L L O</h1>
+      <p id="my"><strong>My Name Is</strong></p>
+      <input id="in">
+      <div id="line"></div>
     </div>
+    <button>SAVE</button>
   <img src="nametag.jpg" width="800px">
   <script src="script.js"></script>
   </body>
 </html>
-
-Center the name tag div on the page, with an 800 px width.
-Use border-radius for rounded corners
-Use box-shadow for the dropped shadow.
-Use the color "magenta".
-Change the font family, size and color.
-Add an h1 tag (for "Hello")
-Add a p tag for "My name is"
